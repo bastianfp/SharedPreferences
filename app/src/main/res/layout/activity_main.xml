@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FAD0CD"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextRut"
+        android:layout_width="385dp"
+        android:layout_height="61dp"
+        android:backgroundTintMode="add"
+        android:hint="Rut" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="383dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/editTextRut"
+        android:layout_marginTop="-12dp"
+        android:backgroundTintMode="add"
+        android:hint="nombre completo" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="381dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/editTextNombre"
+        android:layout_marginTop="-10dp"
+        android:backgroundTintMode="add"
+        android:hint="Correo electronico" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextCorreo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FF5722"
+        android:text="Guardar"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnGuardar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="#E91E63"
+        android:text="Buscar" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="136dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="399dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</RelativeLayout>
